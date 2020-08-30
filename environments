@@ -1,0 +1,31 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+PATH=$PATH:/usr/local/Cellar/node/13.1.0/bin:/opt/metasploit-framework/bin
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export JENV_SHELL=zsh
+export JENV_LOADED=1
+unset JAVA_HOME
+source '/usr/local/Cellar/jenv/0.5.2/libexec/libexec/../completions/jenv.zsh'
+jenv rehash 2>/dev/null
+jenv() {
+  typeset command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  enable-plugin|rehash|shell|shell-options)
+    eval `jenv "sh-$command" "$@"`;;
+  *)
+    command jenv "$command" "$@";;
+  esac
+}
+
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
