@@ -1,3 +1,4 @@
+ZSH_THEME="gentoo"
 PATH="$PATH:$HOME/.composer/vendor/bin"
 fpath=(/usr/local/share/zsh-completions $fpath)
 ZSH_DIR="$HOME/.zsh"
