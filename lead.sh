@@ -1,4 +1,3 @@
-ZSH_THEME="gentoo"
 PATH="$PATH:$HOME/.composer/vendor/bin"
 fpath=(/usr/local/share/zsh-completions $fpath)
 ZSH_DIR="$HOME/.zsh"
@@ -10,7 +9,7 @@ containsElement () {
   return 1
 }
 
-skipFiles=("." ".." "lead.sh" ".git" ".gitignore" "environments-mac" "environments-linux")
+skipFiles=("." ".." "lead.sh" ".git" ".gitignore" "environments-mac" "environments-linux" "before-init")
 
 if [ -d $ZSH_DIR ]; then
    for envFile in $ZSH_DIR/*; do
