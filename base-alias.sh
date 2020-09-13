@@ -14,3 +14,9 @@ alias pf="phpunit --filter"
 # cordova
 localCordova="./node_modules/.bin/cordova"
 alias cordova="$(if [ -f "$localCordova" ]; then echo "$localCordova"; else echo "cordova"; fi)"
+
+which nvim 2>&1 > /dev/null
+
+if [ $? -eq 0 ]; then
+    alias vim="nvim"
+fi
