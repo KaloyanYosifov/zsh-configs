@@ -9,6 +9,7 @@ alias art="php artisan"
 # php
 alias phpstan="./vendor/bin/phpstan"
 alias phpunit="./vendor/bin/phpunit"
+alias pest="./vendor/bin/pest"
 alias pf="phpunit --filter"
 
 # cordova
