@@ -10,6 +10,7 @@ alias art="php artisan"
 alias phpstan="./vendor/bin/phpstan analyse"
 alias csfix="./vendor/bin/php-cs-fixer fix"
 alias phpunit="./vendor/bin/phpunit"
+alias pest="./vendor/bin/pest"
 alias pf="phpunit --filter"
 
 # cordova
