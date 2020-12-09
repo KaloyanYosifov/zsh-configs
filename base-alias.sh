@@ -7,7 +7,8 @@ alias gs="git status"
 alias art="php artisan"
 
 # php
-alias phpstan="./vendor/bin/phpstan"
+alias phpstan="./vendor/bin/phpstan analyse"
+alias csfix="./vendor/bin/php-cs-fixer fix"
 alias phpunit="./vendor/bin/phpunit"
 alias pf="phpunit --filter"
 
