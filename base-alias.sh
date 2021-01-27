@@ -12,6 +12,7 @@ alias csfix="./vendor/bin/php-cs-fixer fix"
 alias phpunit="./vendor/bin/phpunit"
 alias pest="./vendor/bin/pest"
 alias pf="phpunit --filter"
+alias DEBUG_LINE="export XDEBUG_CONFIG=\"idekey=PHPSTORM\";export export XDEBUG_SESSION=\"PHPSTORM\""
 
 # cordova
 localCordova="./node_modules/.bin/cordova"
