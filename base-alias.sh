@@ -7,11 +7,11 @@ alias gs="git status"
 alias art="php artisan"
 
 # php
-alias phpstan="./vendor/bin/phpstan analyse"
-alias csfix="./vendor/bin/php-cs-fixer fix"
-alias phpunit="./vendor/bin/phpunit"
-alias pest="./vendor/bin/pest"
-alias pf="phpunit --filter"
+alias phpstan="XDEBUG_MODE=off ./vendor/bin/phpstan analyse"
+alias csfix="XDEBUG_MODE=off ./vendor/bin/php-cs-fixer fix"
+alias phpunit="XDEBUG_MODE=off ./vendor/bin/phpunit"
+alias pest="XDEBUG_MODE=off ./vendor/bin/pest"
+alias pf="XDEBUG_MODE=off phpunit --filter"
 alias DEBUG_LINE="export XDEBUG_CONFIG=\"idekey=PHPSTORM\";export XDEBUG_SESSION=\"PHPSTORM\""
 alias STOP_DEBUG_LINE="unset XDEBUG_CONFIG;unset XDEBUG_SESSION"
 
