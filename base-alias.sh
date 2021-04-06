@@ -24,3 +24,6 @@ which nvim 2>&1 > /dev/null
 if [ $? -eq 0 ]; then
     alias vim="nvim"
 fi
+
+# Git aliases
+git config --global alias.co checkout
