@@ -14,6 +14,9 @@ alias pest="XDEBUG_MODE=off ./vendor/bin/pest"
 alias pf="XDEBUG_MODE=off phpunit --filter"
 alias DEBUG_LINE="export XDEBUG_CONFIG=\"idekey=PHPSTORM\";export XDEBUG_SESSION=\"PHPSTORM\""
 alias STOP_DEBUG_LINE="unset XDEBUG_CONFIG;unset XDEBUG_SESSION"
+alias flushdns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
+alias checkports="sudo lsof -iTCP -sTCP:LISTEN -n -P"
+
 
 # cordova
 localCordova="./node_modules/.bin/cordova"
