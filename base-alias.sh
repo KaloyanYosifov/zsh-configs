@@ -2,6 +2,7 @@ alias ll="ls -laGh"
 
 #github
 alias gs="git status"
+alias delLGB="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d"
 
 #Laravel
 alias art="php artisan"
