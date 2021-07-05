@@ -1,3 +1,14 @@
+#! /bin/bash
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
 alias ll="ls -laGh"
 
 #github
@@ -27,3 +38,8 @@ fi
 
 # Git aliases
 git config --global alias.co checkout
+
+if [[ $machine == "Mac" ]]; then
+    alias dappv="sudo spctl --master-disable"
+    alias eappv="sudo spctl --master-enable"
+fi
